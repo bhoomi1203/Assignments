@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        #drop{
+            position: relative;
+            display: flex;
+            font-size: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+        }
+        .b{
+            opacity: 0;
+            animation: drop .4s linear forwards;
+            color: gray;
+        }
+        .h{
+            opacity: 0;
+            animation: drop .4s linear forwards .2s;
+            color: aliceblue;
+        }
+        .o{
+            opacity: 0;
+            animation: drop .4s linear forwards .4s;
+            color: gray;
+        }
+        .o2{
+            opacity: 0;
+            animation: drop .4s linear forwards .6s;
+            color: gray;
+        }
+        .m{
+            opacity: 0;
+            animation: drop .4s linear forwards .8s;
+            color: gray;
+        }
+        .i{
+            opacity: 0;
+            animation: drop .4s linear forwards .10s;
+            color: gray;
+        }
+        @keyframes drop {
+            0% {transform: translateY(-200px)
+                 scaleY(0.9); opacity: 0;}
+            5% { opacity: 0.7;}
+            50% {transform: translateY(0px) scaleY(1); opacity: 1;}
+            65% {transform: translateY(100px) scaleY(0.9); opacity: 1;}
+            75% {transform: translateY(200px) scaleY(0.9); opacity: 1;}
+            100% {transform: translateY(250px) scaleY(1); opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div id="drop">
+        <div class="b"></div>
+        <div class="h"></div>
+        <div class="o"></div>
+        <div class="o2"></div>
+        <div class="m"></div>
+        <div class="i"></div> 
+    </div>
+
+</body>
+</html>
